@@ -17,6 +17,13 @@ body {
   padding-bottom: 20px;
 }
 
+.jumbotron h1 {
+  color: white;
+}
+.jumbotron p {
+  color: white;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -52,6 +59,7 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
+  background: #4B0082;
   border-bottom: 1px solid #e5e5e5;
   .btn {
     font-size: 21px;
