@@ -1,8 +1,15 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
+// Override Bootstrap variables
+@import "variables";
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+// Site-specific styles
+// Add additional stylesheets below
+@import "content";
 
 .browsehappy {
   margin: 0.2em 0;
@@ -15,13 +22,6 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.jumbotron h1 {
-  color: white;
-}
-.jumbotron p {
-  color: white;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -58,14 +58,22 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  text-align: center;
-  background: #4B0082;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
+    text-align: center;
+    background: #4B0082;
+    border-bottom: 1px solid #e5e5e5;
+    .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+    }
+    h1 {
+        color: white;
+    }
+    p {
+        color: white;
+    }
 }
+
+
 
 /* Supporting marketing content */
 .marketing {
